@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+@theme {
+  --color-blue-main: #0025cc;
+  --color-onyx: oklch(27.4% 0.006 286.033);
+  --color-platinum: #f0edee;
+  --font-roboto: "Roboto", sans-serif;
+  --font-noto-sans: "Noto Sans", sans-serif;
+  --font-montserrat: "Montserrat", sans-serif;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+body {
+  background-color: var(--color-onyx);
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+#main-page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+  padding-top: 80px;
+}
+
+footer {
+  margin-top: auto;
+}
+
+@media (width >= 48rem) {
+  main {
+    padding-top: 96px;
+  }
+}
